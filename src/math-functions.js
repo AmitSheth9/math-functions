@@ -64,13 +64,13 @@ export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
     let multArray = [];
     sumArray.push(sum(a, b)[0]);
     array.push(sum(sumArray[0], c)[0]);
-        
+
     multArray.push(multiply(a, b)[0]);
     array.push(multiply(multArray[0], c)[0]);
 
     array.push(`${a} and ${b} and ${c} sum to ${array[0]}.`);
     array.push(`The product of ${a} and ${b} and ${c} is ${array[1]}.`);
-    return array; 
+    return array;
 
 }
 
@@ -93,6 +93,24 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
+//takes in array, returns array with first element sum of numbers in input array,second element is string
+    let arrayS = [];
+    let returnArray = [];
+    arrayS.push(sum(sumArr[0], sumArr[1])[0]);
+    returnArray.push(sum(arrayS[0], sumArr[2])[0]);
+
+    returnArray.push(`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${returnArray[0]} is their sum.`);
+
+
+
+    return returnArray;
+
+
+ 
+
+
+
+
 
 }
 
