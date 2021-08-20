@@ -1,10 +1,11 @@
-    import { 
+import { 
     sum, 
     multiply, 
     sumAndMultiplyThreeNumbers, 
     sumArrayWithThreeNumbers, 
     multiplyArrayWithThreeNumbers, 
     multiplyAnyArray
+    
 } from '../src/math-functions.js';
 
 const test = QUnit.test;
